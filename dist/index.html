@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Password protected file</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:300,400,500,600"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+<div class="row">
+  <div class="col-sm-offset-3 col-sm-6">
+    <div class="tile">
+      <span class="close"><i class="fa fa-times"></i></span>
+      <i class="fa fa-lock"></i>
+      <h3>This content is password protected.<small>Please enter your password</small></h3>
+    <form>
+      <div class="form-group">
+        <div class="input-group">
+          <label class="inp-label">Password</label>
+          <input type="password" class="form-control" >
+          <div class="input-group-addon"><i class="fa fa-eye"></i></div>
+        </div>
+      </div><!-- group -->
+      <div class="text-center"><label class="btn btn-primary"> Unlock</label>
+      </div>
+    </form>
+      <div class="success" id="success">
+        <div class="circle-loader">
+  			<div class="checkmark draw"></div>
+  		</div><!-- circle -->
+  		<h2>Your file is ready...</h2>
+      </div><!-- success-->
+    </div><!-- tile-->
+  </div> <!--col-6-->
+</div><!-- row -->
+</div><!-- container -->
+<!-- partial -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script><script  src="./script.js"></script>
+
+</body>
+</html>
