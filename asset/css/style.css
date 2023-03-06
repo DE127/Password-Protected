@@ -246,9 +246,9 @@ h3 small {
 
 .close-error {
 	position: absolute;
-	top: 45%;
+	top: 33%;
 	right: 50%;
-	/* transform: translateY(-50%); */
+	transform: translateY(-50%);
 	width: 42px;
 	height: 42px;
 }
@@ -257,7 +257,7 @@ h3 small {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	/* transform: translateX(50%) translateY(50%); */
+	transform: translateX(50%) translateY(-50%);
 	width: 42px;
 	height: 2px;
 	content: '';
@@ -432,6 +432,7 @@ h3 small {
 
 .circle-loader {
 	border: 2px solid rgba(255, 255, 255, 0.2);
+	opacity: 1;
 	border-left-color: #fff;
 	animation-name: loader-spin;
 	animation-duration: 1s;
@@ -455,15 +456,17 @@ h3 small {
 	-webkit-animation: none;
 	animation: none;
 	border-color: #fff;
-	transition: border 500ms ease-out;
+	transition: border 270ms ease-out;
 }
 
 @keyframes loader-spin {
 	0% {
 		transform: rotate(0deg);
+		opacity: 1;
 	}
 
 	100% {
 		transform: rotate(360deg);
+		opacity: 1;
 	}
 }
